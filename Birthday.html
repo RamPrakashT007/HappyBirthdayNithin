@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Nithin</title>
+
+    <!-- External Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
+
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background-image"></div>
+    </div>
+    <div class="container">
+        <div class="transition-text">Happy Birthday Nithin! 🥳</div>
+        <div id="text-container">
+            <h1 id="line1" style="color:#000000"></h1>
+            <h1 id="line2" style="color:red" align="center"></h1>
+            <h2 id="line3" style="color:black"></h2>
+        </div>
+    
+        <script>
+            // Function to type text line by line
+            function typeText(element, text, callback) {
+                let i = 0;
+                function typeChar() {
+                    if (i < text.length) {
+                        element.innerHTML += text.charAt(i);
+                        i++;
+                        setTimeout(typeChar, 100); // Adjust typing speed
+                    } else if (callback) {
+                        callback(); // Call the next function when the current line is done
+                    }
+                }
+                typeChar();
+            }
+    
+            // Start typing each line in sequence
+            window.onload = function() {
+                const line1 = document.getElementById("line1");
+                const line2 = document.getElementById("line2");
+                const line3 = document.getElementById("line3");
+    
+                typeText(line1, "HELLO Nithin!", function() {
+                    typeText(line2, "Many More Happy Returns Of The Day🥳", function() {
+                        typeText(line3, "Here I have collected some of our Memorable Days");
+                    });
+                });
+            };
+            
+        </script>
+       
+    <body>
+    <div class ="image-container">
+    <h2 class = "side-space">Going to the 1st day of college(18.07.2025)</h2>
+    <img src="14.jpeg"align="center" width="400" height="400">
+    <h2 class = "side-space">E7 Family❤️</h2>
+    <img src="17.jpeg"align="center" width="500" height="300">
+    <h2 class = "side-space">A Day in Thirupparankundram</h2>
+    <img src="1.jpeg"align="center" width="400" height="300">
+    <h2 class = "side-space">Ice cream😜</h2>
+    <img src="9.jpeg"align="center" width="400" height="400">
+    <h2 class = "side-space">Online Classes</h2>
+    <img src="13.jpeg"align="center" width="200" height="300">
+    <h2 class = "side-space">C-31❤️</h2>
+    <img src="12.jpeg"align="center" width="300" height="300">
+
+    <h2 class = "side-space">Those Fun we had while cutting cake on your birthday(23.03.2022)</h2>
+    <img src="15.jpeg"align="center" width="500" height="300">
+   
+    <h2 class = "side-space">When we celebrated our friend's birthday(23.08.2022)</h2>
+        <img src="6.jpeg"align="center" width="550" height="400">
+
+    <h2 class = "side-space">Exploring Madurai(12.9.2022)</h2>
+    <img src="5.jpeg"align="center" width="500" height="400">
+
+>
+    <h2 class = "side-space">Your Birthday celebration before lockdown(23.03.2021)</h2>
+    <img src="16.jpg"align="center" width="550" height="400">
+
+
+    <h2 class = "side-space">Going for treats😂😂</h2>
+    <img src="7.jpeg"align="center" width="500" height="400">
+
+    <br>
+</br>
+    <h3 align = center>Some Memorable Days</h3>
+    <div class="image-two">
+    <img class ="image"src="2.jpeg"align="center" width="200" height="200">
+    <img class ="image"src="3.jpeg"align="center" width="200" height="200">
+    <img class ="image"src="4.jpeg"align="center" width="300" height="200">
+    <img class ="image"src="11.jpeg"align="center" width="200" height="200">
+    <img class ="image"src="8.jpeg"align="center" width="300" height="200">
+    </div>
+</div>
+    <h3 align = left>Once again many more happy returns of the day Nithin.I know I have missed some of our memories here,I have them in my heart. I Wish I was there with you to celebrate.Sorry🙁for not being with you on your birthday. I hope this brings a little smile to your face. You are always my twin brother. Everything remains same between us from the 1st day we both met at hostel till now.Hopefully next year we will celebrate your birthday together.You are an amazing person nithin,Take Care of your health .Have a wonderful year ahead❤️🥳.</h3>
+    <h3 align = right>With Love Your twin- Ram Prakash T❤️</h3>
+    
+    <div id="container">
+        <div id="left-column">
+            <p id="animated-text"></p>
+        </div>
+        <div id="right-column">
+            <p id="line1"></p>
+            <p id="line2"></p>
+        </div>
+    </div>
+
+    <audio id="background-audio" autoplay loop>
+        <source src="birthday background.jpg" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    <!-- Add an image container -->
+    <div id="image-container"></div>
+
+    <div id="balloon-container"></div>
+
+    <!-- Link to External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
